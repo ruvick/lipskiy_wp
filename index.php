@@ -1,80 +1,7 @@
 <?php get_header(); ?>
 
-<header id="header" class="header">
+<?php get_template_part('template-parts/header-section');?>
 
-	<div class="header__img">
-		<div class="header__img-big"></div>
-		<div class="header__block-grey"></div>
-		<div class="header__block-green-small"></div>
-		<div class="header__block-green"></div>
-	</div>
-
-	<div class="header__container container">
-
-		<div class="header__row d-flex">
-			<a href="#" class="header__logo icon-logo"><p>ЛИПСКИЙ <br> <span>И ПАРТНЕРЫ</span></p></a>
-			<!-- Меню с иконкой бургера -->
-			<div class="header__menu menu d-flex">
-				<div class="menu__icon icon-menu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<nav class="menu__body">
-					<ul class="menu__list d-flex">
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Стоимость</a></li>
-						<li><a href="#">Публикации, статьи, исследования</a></li>
-						<li><a href="#">Блог</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-					<div class="mobile__contact d-flex">
-						<a href="mailto:info@lipskiy-konsalting.ru" class="mobile-mail contact-mail">info@lipskiy-konsalting.ru</a>
-						<a href="tel:88007006055" class="mobile-tel contact-tel">8 800 700 60 55</a>
-					</div>
-				</nav>
-				<nav class="mob-menu">
-					<ul class="menu__list d-flex">
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Стоимость</a></li>
-						<li><a href="#">Публикации, статьи, исследования</a></li>
-						<li><a href="#">Блог</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-					<div class="mobile__contact d-flex">
-						<a href="mailto:info@lipskiy-konsalting.ru" class="mobile-mail contact-mail">info@lipskiy-konsalting.ru</a>
-						<a href="tel:88007006055" class="mobile-tel contact-tel">8 800 700 60 55</a>
-					</div>
-				</nav>
-				<div class="header__contact d-flex">
-					<a href="mailto:info@lipskiy-konsalting.ru" class="contact-mail">info@lipskiy-konsalting.ru</a>
-					<a href="tel:88007006055" class="contact-tel">8 800 700 60 55</a>
-				</div>
-			</div>
-		</div>
-
-		<h1>Липский и партнеры <br>
-			консультации <br>
-			для бизнеса
-		</h1>
-
-		<form class="header__form" action="#">
-			<input type="text" name="name" placeholder="Имя" data-value="" class="input">
-			<input type="email" name="email" placeholder="e-mail" data-value="" class="input__phone">
-			<input type="tel" name="tel" placeholder="Телефон" data-error="Введите телефон" class="input__phone input__tel req">
-			<button type="submit" class="form__btn btn">Жду звонка</button>
-			<p>
-				Нажимая на кнопку "Позвоните мне" я даю свое
-				согласие на обработку персональных данных и
-				принимаю условия соглашения
-			</p>
-		</form>
-
-	</div>
-
-</header>
-
-<!-- Секция -->
 <section id="advant" class="advant">
 	<div class="container">
 		<h2>
@@ -151,7 +78,7 @@
 				</h2>
 			</div>
 
-			<div class="services__item services__img-01">
+			<div class="services__item services__img-01" style="background-image: url(<?php echo get_template_directory_uri();?>/img/services/01.jpg);">
 				<div class="services__item-text">
 					<p>
 						Стратегический и
@@ -161,7 +88,7 @@
 				</div>"
 			</div>
 
-			<div class="services__item services__img-02">
+			<div class="services__item services__img-02" style="background-image: url(<?php echo get_template_directory_uri();?>/img/services/02.jpg);">
 				<div class="services__item-text">
 					<p>
 						Управленческий 
@@ -170,7 +97,7 @@
 				</div>"
 			</div>
 
-			<div class="services__item services__img-03">
+			<div class="services__item services__img-03" style="background-image: url(<?php echo get_template_directory_uri();?>/img/services/03.jpg);">
 				<div class="services__item-text">
 					<p>
 						Налоговый и 
@@ -180,7 +107,7 @@
 				</div>"
 			</div>
 
-			<div class="services__item services__img-04">
+			<div class="services__item services__img-04" style="background-image: url(<?php echo get_template_directory_uri();?>/img/services/04.jpg);">
 				<div class="services__item-text">
 					<p>
 						Правовой 
@@ -189,7 +116,7 @@
 				</div>"
 			</div>
 
-			<div class="services__item services__img-05">
+			<div class="services__item services__img-05" style="background-image: url(<?php echo get_template_directory_uri();?>/img/services/05.jpg);">
 				<div class="services__item-text">
 					<p>
 						Маркетинговый 
@@ -270,7 +197,7 @@
 		<div class="materials__column d-flex">
 
 			<div class="materials__item">
-				<div class="materials__img-01"></div>
+				<div class="materials__img-01" style="background-image: url(<?php echo get_template_directory_uri();?>/img/materials/01.jpg);"></div>
 				<div class="materials__text">
 					<h3>Тема статьи #1</h3>
 					<p>
@@ -283,7 +210,7 @@
 			</div>
 
 			<div class="materials__item">
-				<div class="materials__img-02"></div>
+				<div class="materials__img-02" style="background-image: url(<?php echo get_template_directory_uri();?>/img/materials/02.jpg);"></div>
 				<div class="materials__text">
 					<h3>Тема статьи #2</h3>
 					<p>
@@ -296,7 +223,7 @@
 			</div>
 
 			<div class="materials__item">
-				<div class="materials__img-03"></div>
+				<div class="materials__img-03" style="background-image: url(<?php echo get_template_directory_uri();?>/img/materials/03.jpg);"></div>
 				<div class="materials__text">
 					<h3>Тема статьи #3</h3>
 					<p>

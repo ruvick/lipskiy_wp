@@ -1,2 +1,2 @@
 # Lightsnab WordPress шаблог
-Новый сайт Лайтснаба
+Новый сайт lipskiy-konsalting

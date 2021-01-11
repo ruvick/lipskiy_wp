@@ -8,7 +8,7 @@
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
-	// Replace the version number of the theme on each release.
+	// Replace the version number of the theme on each release. 
 	define( '_S_VERSION', '1.0.1' );
 }
 
@@ -134,16 +134,19 @@ function lipsky_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'lipsky_widgets_init' );
+add_action( 'widgets_init', 'lipsky_widgets_init' ); 
 
 /**
  * Enqueue scripts and styles.
  */
 function lipsky_scripts() {
-	wp_enqueue_style( 'lipsky-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'lipsky-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'lipsky-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'lipsky-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'jquery');
+
+	wp_enqueue_script( 'lipsky-inputmask', get_template_directory_uri() . '/js/jquery.inputmask.bundle.js', array(), 1.0, true );
+
+	wp_enqueue_script( 'lipsky-main', get_template_directory_uri() . '/js/main.js', array(), 1.0, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
