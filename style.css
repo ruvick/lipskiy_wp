@@ -1318,7 +1318,7 @@ h3 {
 .block__map {
   /*max-width: 1300px;*/
   width: 100%;
-  height: 300px;
+  height: 600px;
 }
 
 /*Монохромная карта*/
@@ -1331,9 +1331,19 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 /*Убираем лишние элементы с карты*/
 .ymaps-2-1-77-gotoymaps__container, 
 .ymaps-2-1-77-gototech, 
-.ymaps-2-1-77-copyright__content {
+.ymaps-2-1-77-copyright__content,
+.ymaps-2-1-78-copyright__wrap,
+.ymaps-2-1-78-map-copyrights-promo {
   display: none !important;
 }
+
+.contacts h1 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+
+
 
 @media (max-width: 1500px) {
   .advant__column {

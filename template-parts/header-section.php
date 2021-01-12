@@ -12,7 +12,7 @@
 	<div class="header__container container">
 
 		<div class="header__row d-flex">
-			<a href="#" class="header__logo icon-logo"><p>ЛИПСКИЙ <br> <span>И ПАРТНЕРЫ</span></p></a>
+			<a href="http://lipskiy-konsalting.ru" class="header__logo icon-logo"><p>ЛИПСКИЙ <br> <span>И ПАРТНЕРЫ</span></p></a>
 			<!-- Меню с иконкой бургера -->
 			<div class="header__menu menu d-flex">
 				<div class="menu__icon icon-menu">

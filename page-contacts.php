@@ -12,8 +12,9 @@ get_header(); ?>
 <section class="contacts">
 	<div class="container">
 		<h1><?php the_title();?></h1>
-		<div class="block__map" id="map"></div>
 	</div>
+	<div class="block__map" id="map"></div>
+		<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </section>
 
 <?php get_footer(); ?>  
