@@ -3,7 +3,7 @@ Theme Name: lipskiy
 Theme URI: 
 Author: Asmi-Studio
 Author URI: 
-Version: 1.0.1
+Version: 1.0.1 
 */
 
 
@@ -634,6 +634,11 @@ textarea.input {
 .header-services {
   padding-bottom: 140px !important; }
 
+.header-services__title {
+  max-width: 630px;
+  width: 100%;
+}
+
 .header-services-sub {
   max-width: 451px;
   width: 100%;
@@ -643,7 +648,7 @@ textarea.input {
   margin-bottom: 73px; }
 
 .header-services__img-big:before {
-  background: url("../img/header-02.jpg") center center !important; }
+  background: url("img/header-02.jpg") center center !important; }
 
 .header {
   position: relative;
@@ -759,7 +764,7 @@ textarea.input {
     -ms-transform-origin: 0 100%;
     -o-transform-origin: 0 100%; }
   .header__block-green {
-    background: url("../img/angle.png") no-repeat;
+    background: url("img/angle.png") no-repeat;
     background-size: cover;
     position: absolute;
     bottom: 0;
@@ -795,6 +800,7 @@ textarea.input {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .menu__list {
+    display: flex;
     margin-left: 27px; }
     .menu__list li a {
       font-size: 14px;
@@ -1308,6 +1314,26 @@ h3 {
 .services-info__list-item li p {
   line-height: 19.2px;
   margin-bottom: 5px; }
+
+.block__map {
+  /*max-width: 1300px;*/
+  width: 100%;
+  height: 300px;
+}
+
+/*Монохромная карта*/
+[class*="ymaps-2"][class*="-ground-pane"] {
+filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+/* Firefox 3.5+ */
+-webkit-filter: grayscale(100%);
+/* Chrome 19+ & Safari 6+ */ }
+
+/*Убираем лишние элементы с карты*/
+.ymaps-2-1-77-gotoymaps__container, 
+.ymaps-2-1-77-gototech, 
+.ymaps-2-1-77-copyright__content {
+  display: none !important;
+}
 
 @media (max-width: 1500px) {
   .advant__column {

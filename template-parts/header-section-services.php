@@ -1,12 +1,10 @@
-<header id="header" class="header">
+<header class="header-services header">
 
 	<div class="header__img">
-		<div class="header__img-big" >
-			<!-- <img src="<?php echo get_template_directory_uri();?>/img/header-01.jpg)" class="header__img-big-before" alt=""> -->
-		</div>
+		<div class="header__img-big header-services__img-big"></div>
 		<div class="header__block-grey"></div>
 		<div class="header__block-green-small"></div>
-		<div class="header__block-green" style="background-image: url(<?php echo get_template_directory_uri();?>/img/angle.png);"></div>
+		<div class="header__block-green"></div> 
 	</div>
 
 	<div class="header__container container">
@@ -57,23 +55,21 @@
 			</div>
 		</div>
 
-		<h1>Липский и партнеры <br>
-			консультации <br>
-			для бизнеса
+		<h1 class="header-services__title">
+			<?php the_title();?>
 		</h1>
 
-		<form class="header__form" action="#">
-			<input type="text" name="name" placeholder="Имя" class="input">
-			<input type="email" name="email" placeholder="e-mail" class="input__phone">
-			<input type="tel" name="tel" placeholder="Телефон" class="input__phone">
-			<button type="submit" class="form__btn btn">Жду звонка</button>
-			<p>
-				Нажимая на кнопку "Позвоните мне" я даю свое
-				согласие на обработку персональных данных и
-				принимаю условия соглашения
-			</p>
-		</form>
+		<p class="header-services-sub">
+			Управленческий консалтинг - это
+			комплекс мер и мероприятий,
+			направленных на повышение
+			эффективности производственно-
+			технологической и финансово-
+			хозяйственной деятельности компании.
+		</p>
+
+		<a href="#callback" class="btn link pl">Жду звонка</a>
 
 	</div>
 
-</header>
+</header>  
