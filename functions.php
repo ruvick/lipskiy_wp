@@ -151,6 +151,8 @@ function lipsky_scripts() {
 
 	wp_enqueue_script( 'jquery');
 
+	// wp_enqueue_script( 'lipsky-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0', true ); 
+
 	wp_enqueue_script( 'lipsky-inputmask', get_template_directory_uri() . '/js/jquery.inputmask.bundle.js', array(), 1.0, true );
 
 	wp_enqueue_script( 'lipsky-main', get_template_directory_uri() . '/js/main.js', array(), 1.0, true );
@@ -161,4 +163,20 @@ function lipsky_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'lipsky_scripts' );
 
+function wp_corenavi() {
+  global $wp_query;
+  $total = isset( $wp_query->max_num_pages ) ? $wp_query->max_num_pages : 1;
+  $a['total'] = $total;
+  $a['mid_size'] = 3; // сколько ссылок показывать слева и справа от текущей
+  $a['end_size'] = 1; // сколько ссылок показывать в начале и в конце
+  $a['prev_text'] = 'Назад'; // текст ссылки "Предыдущая страница"
+  $a['next_text'] = 'Далее'; // текст ссылки "Следующая страница"
+
+  if ( $total > 1 ) echo '<nav class="pagination">';
+  echo paginate_links( $a );
+  if ( $total > 1 ) echo '</nav>';
+}
+
+
+// ============================================================================================================================================
 
