@@ -1219,6 +1219,8 @@ h3 {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+  .materials__item-link {
+    color: #1A1818;}
   .materials__item {
     max-width: 461px;
     width: 100%; }
@@ -1344,10 +1346,18 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   display: none !important;
 }
 
-.contacts h1 {
-  font-size: 48px;
-  margin-bottom: 50px;
+.contacts ul  {
+  margin-bottom: 30px;
 }
+.contacts ul li {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
 
 
 

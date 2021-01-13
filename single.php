@@ -1,14 +1,6 @@
-<?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package lipsky
- */
+<?php get_header(); ?>
 
-get_header();
-?>
+<?php get_template_part('template-parts/header-cat');?>
 
 	<main id="primary" class="site-main">
 
@@ -35,6 +27,4 @@ get_header();
 
 	</main><!-- #main -->
 
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer();

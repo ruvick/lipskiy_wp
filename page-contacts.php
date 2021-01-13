@@ -11,7 +11,18 @@ get_header(); ?>
 
 <section class="contacts">
 	<div class="container">
-
+		<ul>
+			<li>Юридический адрес:</li>
+			<li>Фактический адрес:</li>
+			<li>ИНН:</li>
+			<li>КПП:</li>
+			<li>ОРГН:</li>
+			<li>р/с:</li>
+			<li>к/с:</li>
+			<li>email:</li>
+			<li>тел:</li>
+			<li>Режим работы:</li>
+		</ul>
 	</div>
 	<div class="block__map" id="map"></div>
 	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
