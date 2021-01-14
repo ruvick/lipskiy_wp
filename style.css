@@ -632,6 +632,7 @@ textarea.input {
   color: grey; }
 
 .header-services {
+  min-height: 780px;
   padding-bottom: 140px !important; }
 
 .header-tip {
@@ -646,10 +647,12 @@ textarea.input {
 .header-services-sub {
   max-width: 451px;
   width: 100%;
+  margin-bottom: 73px; }
+.header-services-sub p {
   font-size: 24px;
   line-height: 28px;
-  font-weight: 700;
-  margin-bottom: 73px; }
+  font-weight: 700; }
+
 
 .header-services__img-big:before {
   background: url("img/header-02.jpg") center center !important; }
@@ -705,7 +708,7 @@ textarea.input {
     top: -230px;
 }
   .header__img-big {
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: 50% 50%;
     position: relative;
     top: -372px;
@@ -737,6 +740,7 @@ textarea.input {
     background: url("img/header-01.jpg") center center;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-size: cover;
     -webkit-transform: rotate(42deg);
     -ms-transform: rotate(42deg);
     transform: rotate(42deg); }

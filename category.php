@@ -25,7 +25,7 @@ get_header();
 						</div>
 						<div class="materials__text">
 							<h3><?php echo $post->post_title?></h3>
-							<p><?php the_content(); ?></p>
+							<p><?php the_excerpt(); ?></p>
 							<a href="<?php echo get_permalink();?>" class="materials__btn btn">Подробнее</a>
 						</div>
 					</div>

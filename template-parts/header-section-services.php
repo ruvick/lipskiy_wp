@@ -1,7 +1,8 @@
 <header class="header-services header">
 
 	<div class="header__img">
-		<div class="header__img-big header-services__img-big"></div>
+		<div class="header__img-big header-services__img-big">
+		</div>
 		<div class="header__block-grey"></div>
 		<div class="header__block-green-small"></div>
 		<div class="header__block-green"></div> 
@@ -59,14 +60,9 @@
 			<?php the_title();?>
 		</h1>
 
-		<p class="header-services-sub">
-			Управленческий консалтинг - это
-			комплекс мер и мероприятий,
-			направленных на повышение
-			эффективности производственно-
-			технологической и финансово-
-			хозяйственной деятельности компании.
-		</p>
+		<div class="header-services-sub">
+			<?php the_excerpt(); ?>
+		</div>
 
 		<a href="#callback" class="btn link pl">Жду звонка</a>
 

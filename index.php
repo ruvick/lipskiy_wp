@@ -203,12 +203,8 @@
 $posts = get_posts( array(
 	'numberposts' => 3,
 	'category'    => 5,
-	'orderby'     => '612,616,626',
 	'order'       => 'DESC',
-	'include'     => '612,608,606',
-	'exclude'     => array(),
-	'meta_key'    => '',
-	'meta_value'  =>'',
+	'include'     => array(),
 	'post_type'   => 'post',
 	'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
 ) );
@@ -226,7 +222,7 @@ foreach( $posts as $post ){
 						</div>
 						<div class="materials__text">
 							<h3><?php echo $post->post_title?></h3>
-							<p><?php the_content(); ?></p>
+							<p><?php the_excerpt(); ?></p>
 							<a href="<?php echo get_permalink();?>" class="materials__btn btn">Подробнее</a>
 						</div>
 					</div>
