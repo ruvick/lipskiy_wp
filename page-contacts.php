@@ -7,7 +7,7 @@ Template Post Type: page
 
 get_header(); ?>
 
-<?php get_template_part('template-parts/header-section-tip');?>
+<?php get_template_part('template-parts/header-copy');?>
 
 <section class="contacts">
 	<div class="container">
@@ -23,9 +23,11 @@ get_header(); ?>
 			<li>тел:</li>
 			<li>Режим работы:</li>
 		</ul>
-	</div>
-	<div class="block__map" id="map"></div>
+
+		<div class="block__map" id="map"></div>
 	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	</div>
+
 </section>
 
 <?php get_footer(); ?>  
