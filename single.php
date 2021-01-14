@@ -2,29 +2,22 @@
 
 <?php get_template_part('template-parts/header-cat');?>
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
+	<div class="container">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		<div class = "content ">
+			
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<picture>
+					<?php echo get_the_post_thumbnail( $post->ID, "turImg", array("alt" => $post->post_title, "title" => $post->post_title));?>
+				</picture>
+				<?php the_content();?>
+			<?php endwhile;?>
+		<?php endif; ?>
+	</div>
 
-			get_template_part( 'template-parts/content', get_post_type() );
+</div>
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'lipsky' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'lipsky' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
+</main><!-- #main -->
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
-
-<?php get_footer();
+<?php get_footer(); ?>  

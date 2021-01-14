@@ -7,6 +7,19 @@
  * @package lipsky
  */
 
+add_action( 'carbon_fields_register_fields', 'boots_register_custom_fields' );
+function boots_register_custom_fields() {
+// путь к пользовательскому файлу определения поля (полей), измените под себя
+require_once __DIR__ . '/inc/custom-fields-options/metaboxes.php';
+require_once __DIR__ . '/inc/custom-fields-options/theme-options.php';
+}
+add_action( 'after_setup_theme', 'crb_load' );
+function crb_load() {
+require_once( get_template_directory() . '/inc/carbon-fields/vendor/autoload.php' );
+\Carbon_Fields\Carbon_Fields::boot(); 
+}
+
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release. 
 	define( '_S_VERSION', '1.0.1' );

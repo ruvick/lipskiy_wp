@@ -793,6 +793,10 @@ textarea.input {
   .header__contact {
     margin-right: 22px; }
 
+.header-services__row {
+  margin-bottom: 45px !important;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1411,9 +1415,14 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 
 .header-copy__breadcrumb a {
   color: #8AB82D;
+  margin-right: 5px;
+}
+.header-copy__breadcrumb .breadcrumb_last {
+margin-left: 5px;
 }
 .header__container-copy h1 {
   margin-bottom: 0 !important;
+  max-width: 100%;
 }
 
 

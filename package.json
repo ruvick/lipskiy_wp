@@ -14,6 +14,11 @@
     "send_index": "scp -C index.php alexatk4@alexatk4.beget.tech:lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/",
     "send_func": "scp -C functions.php alexatk4@alexatk4.beget.tech:lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/",
     "send_futt": "scp -C footer.php alexatk4@alexatk4.beget.tech:lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/",
+
+    "mk_part_carbon": "ssh alexatk4@alexatk4.beget.tech \"mkdir -p lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/inc\"",
+    "send_carbon": "scp -C -r inc alexatk4@alexatk4.beget.tech:lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/",
+    "send_carbon_fild": "scp -C -r inc/custom-fields-options alexatk4@alexatk4.beget.tech:lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/inc/",
+    
     "mk_part_dir": "ssh alexatk4@alexatk4.beget.tech \"mkdir -p lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/template-parts\"",
     "send_part": "scp -C -r template-parts alexatk4@alexatk4.beget.tech:lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/",
     "mk_part_img": "ssh alexatk4@alexatk4.beget.tech \"mkdir -p lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/img\"",

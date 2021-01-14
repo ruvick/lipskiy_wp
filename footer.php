@@ -8,7 +8,7 @@
               <a href="#" aria-label="facebook" class="footer__icon icon-face"></a>
               <a href="#" aria-label="ВКонтакте" class="footer__icon icon-vk"></a>
             </div>
-            <a href="tel:88007006055" class="footer__tel">8 800 700 60 55</a>
+            <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="footer__tel"><? echo $tel = carbon_get_theme_option("as_phones_1"); ?></a> 
           </div>
         </div>
       </div>

@@ -158,7 +158,7 @@ myMap.behaviors.disable('scrollZoom');
 }
 
 
-//POPUP
+// POPUP
 // $('.pl').click(function (event) {
 // 	var pl = $(this).attr('href').replace('#', '');
 // 	var v = $(this).data('vid');

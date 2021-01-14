@@ -10,9 +10,8 @@
 
 	<div class="header__container container">
 
-		<div class="header__row d-flex">
+		<div class="header__row header-services__row d-flex">
 			<a href="http://lipskiy-konsalting.ru" class="header__logo icon-logo"><p>ЛИПСКИЙ <br> <span>И ПАРТНЕРЫ</span></p></a>
-			<!-- Меню с иконкой бургера -->
 			<div class="header__menu menu d-flex">
 				<div class="menu__icon icon-menu">
 					<span></span>
@@ -20,40 +19,34 @@
 					<span></span>
 				</div>
 				<nav class="menu__body">
-<!-- 					<ul class="menu__list d-flex">
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Стоимость</a></li>
-						<li><a href="#">Публикации, статьи, исследования</a></li> 
-						<li><a href="#">Блог</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul> -->
 					<?php wp_nav_menu( array('theme_location' => 'menu-1','menu_class' => 'menu__list',
 					'container_class' => 'menu__list','container' => false )); ?>
-					<div class="mobile__contact d-flex">
+<!-- 					<div class="mobile__contact d-flex">
 						<a href="mailto:info@lipskiy-konsalting.ru" class="mobile-mail contact-mail">info@lipskiy-konsalting.ru</a>
 						<a href="tel:88007006055" class="mobile-tel contact-tel">8 800 700 60 55</a>
-					</div>
+					</div> -->
 				</nav>
 				<nav class="mob-menu">
-<!-- 					<ul class="menu__list d-flex">
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Стоимость</a></li>
-						<li><a href="#">Публикации, статьи, исследования</a></li>
-						<li><a href="#">Блог</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul> -->
 					<?php wp_nav_menu( array('theme_location' => 'menu-2','menu_class' => 'menu__list',
 					'container_class' => 'menu__list','container' => false )); ?>
 					<div class="mobile__contact d-flex">
-						<a href="mailto:info@lipskiy-konsalting.ru" class="mobile-mail contact-mail">info@lipskiy-konsalting.ru</a>
-						<a href="tel:88007006055" class="mobile-tel contact-tel">8 800 700 60 55</a>
+						<a href="mailto:<? echo $mail = carbon_get_theme_option("as_email"); ?>" class="mobile-mail contact-mail"><? echo $mail; ?></a>
+						<a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mobile-tel contact-tel"><? echo $tel = carbon_get_theme_option("as_phones_1"); ?></a>
 					</div>
 				</nav>
 				<div class="header__contact d-flex">
-					<a href="mailto:info@lipskiy-konsalting.ru" class="contact-mail">info@lipskiy-konsalting.ru</a>
-					<a href="tel:88007006055" class="contact-tel">8 800 700 60 55</a>
+					<a href="mailto:<? echo $mail = carbon_get_theme_option("as_email"); ?>" class="mobile-mail contact-mail"><? echo $mail; ?></a>
+					<a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="contact-tel"><? echo $tel = carbon_get_theme_option("as_phones_1"); ?></a>
 				</div>
 			</div>
+		</div>
+
+		<div class="header-copy__breadcrumb">
+			<?php
+			if (function_exists ('yoast_breadcrumb')) {
+				yoast_breadcrumb ('<p id = "breadcrumbs">', '</p>');
+			}
+			?>
 		</div>
 
 		<h1 class="header-services__title">
