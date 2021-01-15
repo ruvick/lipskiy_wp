@@ -1,7 +1,20 @@
+<?php 
+
+	$banner = wp_get_attachment_image_src( carbon_get_the_post_meta('resort_banner'), 'full')[0];
+		if(empty($banner)) {
+	$banner = get_template_directory_uri() . 'img/header-01.jpg';
+}
+
+ ?>
+
 <header class="header-services header">
 
 	<div class="header__img">
 		<div class="header__img-big header-services__img-big">
+			<div class="header-services__img" style="background-image: url(<?php echo $banner?>);">
+				
+			</div>
+			<!-- <img src="<?php echo $banner?>" alt=""> -->
 		</div>
 		<div class="header__block-grey"></div>
 		<div class="header__block-green-small"></div>
@@ -13,7 +26,7 @@
 		<div class="header__row header-services__row d-flex">
 			<a href="http://lipskiy-konsalting.ru" class="header__logo icon-logo"><p>ЛИПСКИЙ <br> <span>И ПАРТНЕРЫ</span></p></a>
 			<div class="header__menu menu d-flex">
-				<div class="menu__icon icon-menu">
+				<div class="menu__icon icon-menu"> 
 					<span></span>
 					<span></span>
 					<span></span>

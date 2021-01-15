@@ -62,6 +62,12 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
           ->set_width(50),
         Field::make('text', 'mkad_map_point', 'Координаты карты'),
     ) );
+Container::make('post_meta', 'resort_city', 'Доп. поля')
+// ->show_on_template('page-services.php')
+->add_fields(array(
+  Field::make('image', 'resort_banner', 'Фото баннера')
+  ->help_text( 'Изображение не менее 1070 х 758px'),
+));
 Container::make('post_meta', 'ca_product', 'Доп поля')
   ->where('post_template', '=', 'page-product.php')
   ->add_fields(array(
@@ -76,12 +82,6 @@ Container::make('post_meta', 'ca_about', 'Доп поля')
       ->add_fields(array(
         Field::make('image', 'image', 'Фото'),
       ))
-  ));
-Container::make('post_meta', 'as_video_instr', 'Видео-инструкция')
-  // ->show_on_template('single-instruction.php')
-  // ->where('post_template', '=', 'single-instruction.php')
-  ->add_fields(array(
-    Field::make('text', 'as_video_instr_video', 'Код видео с YouTube')
   ));
 Container::make('post_meta', 'as_cert', 'Сертификат/Инструкция')
   ->show_on_post_type('post')

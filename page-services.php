@@ -5,12 +5,15 @@ Template Name: Страница Услуги
 Template Post Type: page
 */
 
-get_header(); ?>
+get_header();
+
+ ?>
 
 <?php get_template_part('template-parts/header-section-services');?>
 
 <section id="services-info" class="services-info services-info__g">
 	<div class="container">
+
 		<h2>Управленческий консалтинг  включает комплекс услуг:</h2>
 		<ul class="services-info__list">
 			<li><span></span>

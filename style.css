@@ -655,7 +655,38 @@ textarea.input {
 
 
 .header-services__img-big:before {
-  background: url("img/header-02.jpg") center center !important; }
+  background: url("") center center !important; }
+.header-services__img {
+    position: absolute;
+    width: 100%;
+    height: 758px;
+    background-repeat: no-repeat;
+     background-size: cover; 
+    background-position: 0% 0%;
+    top: 180px;
+    right: 310px;
+    z-index: 1;
+    transform: rotate(42deg);
+}
+
+
+/*.header-services__img-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-services__img-big img {
+    position: absolute;
+    width: 100%;
+    top: 178px;
+    right: 310px;
+    z-index: 1;
+    -webkit-transform: rotate(42deg);
+    -ms-transform: rotate(42deg);
+    transform: rotate(42deg); }*/
+
+
+
 
 .header {
   position: relative;
