@@ -218,12 +218,12 @@ add_action( 'wp_ajax_nopriv_send_work', 'send_work' );
     if ( check_ajax_referer( 'NEHERTUTLAZIT', 'nonce', false ) ) {
       
       $headers = array(
-        'From: Сайт ЛИПСКИЙ И ПАРТНЕРЫ <rudikov.web@ya.ru>',
+        'From: Сайт «ЛИПСКИЙ И ПАРТНЕРЫ» <noreply@lipskiy-konsalting.ru>',
         'content-type: text/html',
       );
     
       add_filter('wp_mail_content_type', create_function('', 'return "text/html";'));
-      if (wp_mail(carbon_get_theme_option( 'as_email_send' ), 'Заказ с сайта', '<strong>С какой формы:</strong> '.$_REQUEST["title"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["cltel"], $headers))
+      if (wp_mail(carbon_get_theme_option( 'as_email_send' ), 'Заявка с сайта «ЛИПСКИЙ И ПАРТНЕРЫ»', '<strong>Имя:</strong> '.$_REQUEST["name"]. '<br/> <strong>E-mail:</strong> '.$_REQUEST["email"]. ' <br/> <strong>Телефон:</strong> '.$_REQUEST["tel"], $headers))
         wp_die("<span style = 'color:green;'>Мы свяжемся с Вами в ближайшее время.</span>");
       else wp_die("<span style = 'color:red;'>Сервис недоступен попробуйте позднее.</span>");
       

@@ -17,7 +17,7 @@ if (iconMenu) {
 	var inputmask_phone = {"mask": "+9(999)999-99-99"};
 	jQuery("input[type=tel]").inputmask(inputmask_phone); 
 
-
+// Отправщик
     jQuery(".form__btn").click(function(e){ 
 
         e.preventDefault();
@@ -34,6 +34,7 @@ if (iconMenu) {
                     action: 'send_work',        
                     nonce: allAjax.nonce,
                     name: name,
+                    email: email,
                     tel: tel,
                     formsubject: jQuery(this).data("formname"),
                 }   
