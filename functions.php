@@ -173,8 +173,17 @@ function lipsky_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) { 
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+		wp_localize_script( 'main', 'allAjax', array(
+			'ajaxurl' => admin_url( 'admin-ajax.php' ),
+			'nonce'   => wp_create_nonce( 'NEHERTUTLAZIT' ) 
+		) );
+
 }
 add_action( 'wp_enqueue_scripts', 'lipsky_scripts' );
+
+
+
 
 function wp_corenavi() {
   global $wp_query;
@@ -198,3 +207,27 @@ add_post_type_support('page', array('excerpt'));
 add_action('init', 'page_excerpt');
 // ============================================================================================================================================
 
+add_action( 'wp_ajax_send_work', 'send_work' );
+add_action( 'wp_ajax_nopriv_send_work', 'send_work' );
+
+  function send_work() {
+    if ( empty( $_REQUEST['nonce'] ) ) {
+      wp_die( '0' );
+    }
+    
+    if ( check_ajax_referer( 'NEHERTUTLAZIT', 'nonce', false ) ) {
+      
+      $headers = array(
+        'From: Сайт Автоматика <noreply@n-avtomatic.ru>',
+        'content-type: text/html',
+      );
+    
+      add_filter('wp_mail_content_type', create_function('', 'return "text/html";'));
+      if (wp_mail(carbon_get_theme_option( 'as_email_send' ), 'Заказ с сайта', '<strong>С какой формы:</strong> '.$_REQUEST["title"].' <br/> <strong>Телефон:</strong> '.$_REQUEST["cltel"], $headers))
+        wp_die("<span style = 'color:green;'>Мы свяжемся с Вами в ближайшее время.</span>");
+      else wp_die("<span style = 'color:red;'>Сервис недоступен попробуйте позднее.</span>");
+      
+    } else {
+      wp_die( 'НО-НО-НО!', '', 403 );
+    }
+  }

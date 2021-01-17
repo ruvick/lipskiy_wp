@@ -58,9 +58,12 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
           ->set_width(50),
         Field::make( 'text', 'as_vk', __( 'Вконтакте' ) )
           ->set_width(50),
-        Field::make( 'text', 'as_director', __( 'Генеральный директор' ) )
+        Field::make( 'text', 'as_director', __( 'Генеральный директор' ) ),
+          // ->set_width(50),
+        Field::make('text', 'map_point', 'Координаты карты')
           ->set_width(50),
-        Field::make('text', 'mkad_map_point', 'Координаты карты'),
+        Field::make('text', 'text_map', 'Текст метки карты')
+          ->set_width(50),
     ) );
 Container::make('post_meta', 'resort_city', 'Доп. поля')
 // ->show_on_template('page-services.php')
