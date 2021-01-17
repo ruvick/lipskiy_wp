@@ -170,16 +170,16 @@ function lipsky_scripts() {
 
 	wp_enqueue_script( 'lipsky-main', get_template_directory_uri() . '/js/main.js', array(), 1.0, true );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) { 
+	wp_localize_script( 'lipsky-main', 'allAjax', array(
+      'ajaxurl' => admin_url( 'admin-ajax.php' ),
+      'nonce'   => wp_create_nonce( 'NEHERTUTLAZIT' )
+    ) );
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
-		wp_localize_script( 'main', 'allAjax', array(
-			'ajaxurl' => admin_url( 'admin-ajax.php' ),
-			'nonce'   => wp_create_nonce( 'NEHERTUTLAZIT' ) 
-		) );
-
 }
+
 add_action( 'wp_enqueue_scripts', 'lipsky_scripts' );
 
 
@@ -218,7 +218,7 @@ add_action( 'wp_ajax_nopriv_send_work', 'send_work' );
     if ( check_ajax_referer( 'NEHERTUTLAZIT', 'nonce', false ) ) {
       
       $headers = array(
-        'From: Сайт Автоматика <noreply@n-avtomatic.ru>',
+        'From: Сайт ЛИПСКИЙ И ПАРТНЕРЫ <rudikov.web@ya.ru>',
         'content-type: text/html',
       );
     

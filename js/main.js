@@ -35,12 +35,12 @@ if (iconMenu) {
                     nonce: allAjax.nonce,
                     name: name,
                     tel: tel,
-                    // formsubject: jQuery(this).data("formname"),
+                    formsubject: jQuery(this).data("formname"),
                 }   
             );
                     
             jqXHR.done(function (responce) {  //Всегда при удачной отправке переход для страницу благодарности
-                document.location.href = 'https://almiproducts.com/stranicza-blagodarnosti/';   
+                document.location.href = 'http://lipskiy-konsalting.ru/stranicza-blagodarnosti/';   
             });
                     
             jqXHR.fail(function (responce) {
