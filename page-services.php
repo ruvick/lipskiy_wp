@@ -7,11 +7,43 @@ Template Post Type: page
 
 get_header();
 
- ?>
+?>
 
 <?php get_template_part('template-parts/header-section-services');?>
 
-<section id="services-info" class="services-info services-info__g">
+<main>
+
+
+
+
+	<?php	 $complex = carbon_get_post_meta( $post->ID, 'complex_field');
+	if ( ! empty( $complex ) ): ?>
+		<?php foreach ( $complex as $compl ): ?>
+
+
+		<?php	if (!empty($compl['checkbox_pay_exc'])) {
+				echo '<section id="services-info" class="services-info services-info__g">';
+			}
+			else {
+				echo '<section id="services-info" class="services-info services-info__w">';
+			}
+			?> 
+
+			<!-- <section id="services-info" class="services-info services-info__g"> -->
+				<div class="container">
+					<?php echo $compl['text_field'] ?>
+				</div>
+			</section>
+		<?php endforeach; ?>
+	<?php endif; ?>
+
+</main>
+
+
+
+
+
+<!-- <section id="services-info" class="services-info services-info__g">
 	<div class="container">
 
 		<h2>Управленческий консалтинг  включает комплекс услуг:</h2>
@@ -23,7 +55,7 @@ get_header();
 					их взаимодействия (внутри подразделений и между подразделениями). Разработка системы KPI 
 				</p>
 			</li>
-			<li><span></span>
+			<li><span></span> 
 				<p>
 					Оптимизация финансово-хозяйственной деятельности компании, разработка мероприятий повышения эффективности деятельности. 
 					Разработка корпоративных стандартов управления компанией
@@ -230,6 +262,6 @@ get_header();
 
 		</div>
 	</div>
-</section>
+</section> -->
 
 <?php get_footer(); ?>  

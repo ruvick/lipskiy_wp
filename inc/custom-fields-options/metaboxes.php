@@ -66,10 +66,19 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
           ->set_width(50),
     ) );
 Container::make('post_meta', 'resort_city', 'Доп. поля')
-// ->show_on_template('page-services.php')
+ // ->show_on_template('page-services.php')
+->show_on_post_type('page')
 ->add_fields(array(
   Field::make('image', 'resort_banner', 'Фото баннера')
-  ->help_text( 'Изображение не менее 1070 х 758px'),
+    ->help_text( 'Изображение не менее 1070 х 758px'),
+  // Field::make('color', 'color_field', 'Цвет секции'),
+  Field::make( 'complex', 'complex_field', 'Текстовый блок' )
+  ->add_fields( array(
+    Field::make("checkbox", "checkbox_pay_exc", "Серый цвет") 
+  ->help_text('Активирует серый цвет блока"')
+    ->set_width( 5 ),
+    Field::make( 'rich_text', 'text_field', 'Текст блока' )
+    ->set_width( 95 ), ) ),
 ));
 Container::make('post_meta', 'ca_product', 'Доп поля')
   ->where('post_template', '=', 'page-product.php')

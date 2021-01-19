@@ -205,8 +205,9 @@ function page_excerpt() {
 add_post_type_support('page', array('excerpt'));
 }
 add_action('init', 'page_excerpt');
-// ============================================================================================================================================
 
+
+// Отправщик на почту
 add_action( 'wp_ajax_send_work', 'send_work' );
 add_action( 'wp_ajax_nopriv_send_work', 'send_work' );
 
@@ -231,3 +232,22 @@ add_action( 'wp_ajax_nopriv_send_work', 'send_work' );
       wp_die( 'НО-НО-НО!', '', 403 );
     }
   }
+
+
+
+// Изменение цвета секции на стр Услуги
+function my_styles_method() {
+	// #ff0000
+	$color = carbon_get_the_post_meta('color_field');
+	$custom_css = "  
+		.services-info__g {
+			background: {$color} ;
+		}
+	";
+
+	wp_add_inline_style( 'lipsky-style', $custom_css );
+}
+
+add_action( 'wp_enqueue_scripts', 'my_styles_method' );
+
+
