@@ -16,7 +16,7 @@ get_header();
 
 			<?php if (have_posts()) { while (have_posts()) { the_post(); ?>
 
-				<a href="<?php echo get_permalink();?>" class="materials__item-link">
+				<!-- <a href="<?php echo get_permalink();?>" class="materials__item-link"> -->
 					<div class="materials__item">
 						<div class="materials__img-01">
 							<picture>
@@ -29,7 +29,7 @@ get_header();
 							<a href="<?php echo get_permalink();?>" class="materials__btn btn">Подробнее</a>
 						</div>
 					</div>
-				</a>
+				<!-- </a> -->
 
 			<?php 	} //конец while
 		} //конец if ?>
