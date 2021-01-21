@@ -2048,7 +2048,11 @@ margin-left: 5px;
     color: #fff;
     text-align: justify; }
  .header-services__container .header-copy__breadcrumb span {
-    color: #fff; } }
+    color: #fff; }
+.block__map {
+    height: 450px; }
+ .ymaps-2-1-78-map, .ymaps-2-1-78-i-ua_js_yes, .ymaps-2-1-78-map-bg, .ymaps-2-1-78-islets_map-lang-ru {
+  height: 450px !important; } }
 
 @media (max-width: 493px) {
   .advant {
