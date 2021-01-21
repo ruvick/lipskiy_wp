@@ -21,7 +21,7 @@
 		<div class="header__block-green"></div> 
 	</div>
 
-	<div class="header__container container">
+	<div class="header__container container header-services__container">
 
 		<div class="header__row header-services__row d-flex">
 			<a href="http://lipskiy-konsalting.ru" class="header__logo icon-logo"><p>ЛИПСКИЙ <br> <span>И ПАРТНЕРЫ</span></p></a>
