@@ -8,9 +8,9 @@ get_header();
 
 <section id="materials" class="materials">
 	<div class="container">
-		<h2>
+<!-- 		<h2>
 			Интересные материалы
-		</h2>
+		</h2> -->
 
 		<div class="materials__column d-flex">
 

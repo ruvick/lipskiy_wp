@@ -190,7 +190,7 @@
 </section>
 
 <!-- Секция -->
-<section id="materials" class="materials">
+<section id="materials" class="materials__home materials">
 	<div class="container">
 		<h2>
 			Интересные материалы

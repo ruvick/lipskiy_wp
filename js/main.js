@@ -13,9 +13,28 @@ if (iconMenu) {
 	});
 }
 
+
+// // Закрытие моб меню при клике на якорную ссылку
+    $('.menu__list a').on('click', function(){ 
+      if($('.icon-menu').css('display') !='none'){
+        $(".icon-menu").trigger( "click" ); 
+      }
+    });
+
+
+// // Плавный скролл якорных ссылок
+//     $(".menu__list").on("click","a", function (event) {
+//         event.preventDefault();
+//         var id  = $(this).attr('href'),
+//             top = $(id).offset().top;
+//         $('body,html').animate({scrollTop: top}, 1500);
+//     });
+
+
 // Маска телефона
 	var inputmask_phone = {"mask": "+9(999)999-99-99"};
 	jQuery("input[type=tel]").inputmask(inputmask_phone); 
+
 
 // Отправщик
     jQuery(".form__btn").click(function(e){ 

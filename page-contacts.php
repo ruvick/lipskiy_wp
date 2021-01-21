@@ -17,15 +17,15 @@ get_header(); ?>
 			<li>ИНН: <? echo carbon_get_theme_option("as_inn"); ?></li>
 			<li>КПП: <? echo carbon_get_theme_option("as_kpp"); ?></li>
 			<li>ОРГН: <? echo carbon_get_theme_option("as_orgn"); ?></li>
-			<li>р/с: <? echo carbon_get_theme_option("as_rs"); ?></li>
-			<li>к/с: <? echo carbon_get_theme_option("as_ks"); ?></li>
-			<li>email: <? echo carbon_get_theme_option("as_email"); ?></li>
-			<li>тел: <? echo carbon_get_theme_option("as_phones_1"); ?></li>
+			<li>Р/С: <? echo carbon_get_theme_option("as_rs"); ?></li>
+			<li>К/С: <? echo carbon_get_theme_option("as_ks"); ?></li>
+			<li>Email: <a href="mailto:<? echo $mail = carbon_get_theme_option("as_email"); ?>"><? echo $mail; ?></a></li>
+			<li>Тел: <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel = carbon_get_theme_option("as_phones_1"); ?></a></li>
 			<li>Режим работы: <? echo carbon_get_theme_option("as_schedule"); ?></li>
 		</ul>
 
 		<div class="block__map" id="map"></div>
-		<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> 
 
 		<script>
 			ymaps.ready(init); 
