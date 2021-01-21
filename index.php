@@ -213,7 +213,7 @@ $result = wp_get_recent_posts( $args );
 
 foreach( $posts as $post ){
 	?>
-				<a href="<?php echo get_permalink($p['ID']) ?>" class="materials__item-link">
+				<!-- <a href="<?php echo get_permalink($p['ID']) ?>" class="materials__item-link"> -->
 					<div class="materials__item">
 						<div class="materials__img-01">
 							<picture>
@@ -226,9 +226,8 @@ foreach( $posts as $post ){
 							<a href="<?php echo get_permalink();?>" class="materials__btn btn">Подробнее</a>
 						</div>
 					</div>
-				</a>	<?php 
-} 
-?>
+				<!-- </a>	 -->
+<?php } ?>
 
 
 <!-- 			<div class="materials__item">
