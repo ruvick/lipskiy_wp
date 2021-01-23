@@ -1,7 +1,7 @@
-<header class="header-services header">
+<header id="header" class="header header_thank">
 
 	<div class="header__img">
-		<div class="header__img-big" >
+		<div class="header__img-big header_thank-img-big">
 		</div>
 		<div class="header__block-grey"></div>
 		<div class="header__block-green-small"></div>
@@ -10,10 +10,10 @@
 
 	<div class="header__container container">
 
-		<div class="header__row header-services__row d-flex">
+		<div class="header__row d-flex">
 			<a href="http://lipskiy-konsalting.ru" class="header__logo icon-logo"><p>ЛИПСКИЙ <br> <span>И ПАРТНЕРЫ</span></p></a>
 			<div class="header__menu menu d-flex">
-				<div class="menu__icon icon-menu"> 
+				<div class="menu__icon icon-menu">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -49,7 +49,7 @@
 				 ЗА ОБРАЩЕНИЕ! 
 		</h1>
 
-		<div class="header-services-sub">
+		<div class="header-services-sub header_thank_sub">
 			<p>
 				Наши менеджеры свяжуться с Вами <br>
   			в ближайшее время

@@ -22,10 +22,6 @@
 				<nav class="menu__body">
 					<?php wp_nav_menu( array('theme_location' => 'menu-1','menu_class' => 'menu__list',
 					'container_class' => 'menu__list','container' => false )); ?>
-<!-- 					<div class="mobile__contact d-flex">
-						<a href="mailto:info@lipskiy-konsalting.ru" class="mobile-mail contact-mail">info@lipskiy-konsalting.ru</a>
-						<a href="tel:88007006055" class="mobile-tel contact-tel">8 800 700 60 55</a>
-					</div> -->
 				</nav>
 				<nav class="mob-menu">
 					<?php wp_nav_menu( array('theme_location' => 'menu-2','menu_class' => 'menu__list',

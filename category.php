@@ -1,16 +1,11 @@
 <?php 
 
-get_header(); 
-// $cat_ID = get_query_var('cat');
-?>
+get_header(); ?>
 
 <?php get_template_part('template-parts/header-cat');?>
 
 <section id="materials" class="materials">
 	<div class="container">
-<!-- 		<h2>
-			Интересные материалы
-		</h2> -->
 
 		<div class="materials__column d-flex">
 

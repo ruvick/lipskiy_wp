@@ -24,7 +24,7 @@
 				<div class="advant__item-left advant-icon-2"></div>
 				<div class="advant__item-right">
 					<p>
-						Мы предоставляем услуги высокого качества не только крупному
+						Мы предоставляем услуги высокого качества не только крупному 
 						бизнесу, но субьектам малого и среднего предпринимательства.
 					</p>
 				</div>
@@ -229,46 +229,6 @@ foreach( $posts as $post ){
 				<!-- </a>	 -->
 <?php } ?>
 
-
-<!-- 			<div class="materials__item">
-				<div class="materials__img-01" style="background-image: url(<?php echo get_template_directory_uri();?>/img/materials/01.jpg);"></div>
-				<div class="materials__text">
-					<h3>Тема статьи #1</h3>
-					<p>
-						Мы команда выпускников МГУ имени М.В. Ломоносова с
-						опытом работы в ведущих международных организациях в
-						сфере финансов и консалтинга, крупнейших российских компаниях.
-					</p>
-					<a href="#" class="materials__btn btn">Подробнее</a>
-				</div>
-			</div>
-
-			<div class="materials__item">
-				<div class="materials__img-02" style="background-image: url(<?php echo get_template_directory_uri();?>/img/materials/02.jpg);"></div>
-				<div class="materials__text">
-					<h3>Тема статьи #2</h3>
-					<p>
-						Мы команда выпускников МГУ имени М.В. Ломоносова с
-						опытом работы в ведущих международных организациях в
-						сфере финансов и консалтинга, крупнейших российских компаниях.
-					</p>
-					<a href="#" class="materials__btn btn">Подробнее</a>
-				</div>
-			</div>
-
-			<div class="materials__item">
-				<div class="materials__img-03" style="background-image: url(<?php echo get_template_directory_uri();?>/img/materials/03.jpg);"></div>
-				<div class="materials__text">
-					<h3>Тема статьи #3</h3>
-					<p>
-						Мы команда выпускников МГУ имени М.В. Ломоносова с
-						опытом работы в ведущих международных организациях в
-						сфере финансов и консалтинга, крупнейших российских компаниях.
-					</p>
-					<a href="#" class="materials__btn btn">Подробнее</a>
-				</div>
-			</div> -->
-			
 		</div>
 	</div>
 </section>
