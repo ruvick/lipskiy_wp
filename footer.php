@@ -1,7 +1,7 @@
     <footer id="footer" class="footer">
       <div class='container'>
         <div class="footer__row d-flex">
-          <a href="#" class="header__logo footer__logo icon-logo-f"><p>ЛИПСКИЙ <br> <span>И ПАРТНЕРЫ</span></p></a>
+          <a href="http://lipskiy-konsalting.ru" class="header__logo footer__logo icon-logo-f"><p>ЛИПСКИЙ <br> <span>И ПАРТНЕРЫ</span></p></a>
           <div class="footer__contact d-flex">
             <div class="footer__social d-flex">
               <a href="#" aria-label="instagram" class="footer__icon icon-insta"></a>
