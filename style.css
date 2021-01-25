@@ -2009,6 +2009,8 @@ margin-left: 5px;
   .header__img-big:before {
     width: 130%;
     right: 90px; }
+  .contacts ul li {
+     line-height: 20px; }
   .header__block-grey {
     display: none; } }
 
