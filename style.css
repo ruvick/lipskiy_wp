@@ -9,7 +9,7 @@ Version: 1.0.1
  
 @font-face { 
   font-family: "Lato";
-  src: url("fonts/Lato-Regular.eot");
+  src: url("fonts/Lato-Regular.eot"); 
   src: local("☺"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype"), url("fonts/Lato-Regular.svg") format("svg");
   font-weight: 400;
   font-style: normal; }
@@ -1260,6 +1260,7 @@ h3 {
     text-align: center;
     margin-bottom: 50px; }
   .materials__column {
+    align-items: flex-start;
     flex-wrap: wrap;
     margin-bottom: 30px;
     -webkit-box-pack: justify;

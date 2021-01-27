@@ -9,7 +9,7 @@ get_header(); ?>
 
 		<div class="materials__column d-flex">
 
-			<?php if (have_posts()) { while (have_posts()) { the_post(); ?>
+			<?php if (have_posts()) { while (have_posts()) { the_post(); ?> 
 
 				<!-- <a href="<?php echo get_permalink();?>" class="materials__item-link"> -->
 					<div class="materials__item">
@@ -20,7 +20,13 @@ get_header(); ?>
 						</div>
 						<div class="materials__text">
 							<h3><?php echo $post->post_title?></h3>
-							<p><?php the_excerpt(); ?></p>
+							<p>
+								<?php 
+									$maxchar = 200;
+									$text = strip_tags( get_the_excerpt() );
+									echo mb_substr( $text, 0, $maxchar );
+								?>
+							</p>
 							<a href="<?php echo get_permalink();?>" class="materials__btn btn">Подробнее</a>
 						</div>
 					</div>
