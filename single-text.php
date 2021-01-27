@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Шаблон Оплата услуг
+Template Name: Шаблон Текстовой страницы
 Template Post Type: post
 */
 ?>
