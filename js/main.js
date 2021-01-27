@@ -19,7 +19,7 @@ if (iconMenu) {
       if($('.icon-menu').css('display') !='none'){
         $(".icon-menu").trigger( "click" ); 
       }
-    });
+    }); 
 
 
 // // Плавный скролл якорных ссылок
