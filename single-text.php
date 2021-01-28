@@ -15,6 +15,11 @@ Template Post Type: post
 		<div class="container">
 
 			<div class ="posts__content">
+				<div class="posts__img">
+					<picture>
+						<?php echo get_the_post_thumbnail( $post->ID, "turImg", array("alt" => $post->post_title, "title" => $post->post_title));?>
+					</picture>
+				</div>
 				<?php global $post;
 					echo apply_filters('the_content', $post->post_content); 
 				?>
@@ -25,4 +30,4 @@ Template Post Type: post
 
 </main>
 
-<?php get_footer(); ?>   
+<?php get_footer(); ?>    
