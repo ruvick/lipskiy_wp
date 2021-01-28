@@ -9,7 +9,7 @@ Version: 1.0.1
  
 @font-face { 
   font-family: "Lato"; 
-  src: url("fonts/Lato-Regular.eot"); 
+  src: url("fonts/Lato-Regular.eot");  
   src: local("☺"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype"), url("fonts/Lato-Regular.svg") format("svg");
   font-weight: 400;
   font-style: normal; }
@@ -652,7 +652,7 @@ textarea.input {
   max-width: 451px;
   width: 100%;
   /*width: 52%;*/
-  min-height: 180px;
+  height: 180px;
   overflow: hidden;
   margin-bottom: 55px;
   /*margin-bottom: 73px;*/ }
