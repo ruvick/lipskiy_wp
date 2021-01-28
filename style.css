@@ -15,7 +15,7 @@ Version: 1.0.1
   font-style: normal; }
 
 @font-face {
-  font-family: "Lato";
+  font-family: "Lato"; 
   src: url("fonts/Lato-Bold.eot");
   src: local("☺"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype"), url("fonts/Lato-Bold.svg") format("svg");
   font-weight: 700;
@@ -1574,7 +1574,7 @@ margin-left: 5px;
 }
 
 .posts {
-  padding: 30px 0 50px 0;
+  padding: 0px 0 50px 0;
 }
 .posts__content h1,
 .posts__content h2,
@@ -1592,13 +1592,14 @@ margin-left: 5px;
 .posts__content ol {
   margin-bottom: 20px;
   margin-left: 20px;
+  padding-left: 15px;
 }
 .posts__content ul li,
 .posts__content ol li {
   margin-bottom: 8px;
 }
 .posts__content ul li {
-  list-style: circle;
+  list-style: square;
 }
 .posts__img {
   max-width: 461px;
@@ -1742,6 +1743,8 @@ margin-left: 5px;
     opacity: 0.75; }
   .header-services-sub {
     margin: 0px auto 73px auto; }
+  .header-services-sub p {
+    text-align: center; }
   .header-services .btn {
     margin: 0px auto; }
   .header .icon-logo:before {
@@ -2130,12 +2133,13 @@ margin-left: 5px;
   .info__item {
     max-width: 90%; }
   .header-services {
-    padding-bottom: 120px !important; }
+    padding-bottom: 60px !important; }
   .header-services__img-big {
     opacity: 0.7; }
    .header-services__container .header-copy__breadcrumb {
     margin-bottom: 25px; }
     .header-services-sub {
+      min-height: 0px;
      margin: 0px auto 50px; }
   .header-services-sub p {
     color: #fff;
@@ -2143,9 +2147,9 @@ margin-left: 5px;
  .header-services__container .header-copy__breadcrumb span {
     color: #fff; }
 .block__map {
-    height: 450px; }
+    height: 300px; }
  .ymaps-2-1-78-map, .ymaps-2-1-78-i-ua_js_yes, .ymaps-2-1-78-map-bg, .ymaps-2-1-78-islets_map-lang-ru {
-  height: 450px !important; }
+  height: 300px !important; }
   .header_thank_sub p {
     text-align: center;
     color: #1a1818; }
