@@ -21,7 +21,7 @@
 			</div>
 
 			<div class="advant__item d-flex">
-				<div class="advant__item-left advant-icon-2"></div>
+				<div class="advant__item-left advant-icon-2"></div> 
 				<div class="advant__item-right">
 					<p>
 						Мы предоставляем услуги высокого качества не только крупному 

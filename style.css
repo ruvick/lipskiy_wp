@@ -8,7 +8,7 @@ Version: 1.0.1
 
  
 @font-face { 
-  font-family: "Lato"; 
+  font-family: "Lato";  
   src: url("fonts/Lato-Regular.eot");  
   src: local("☺"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype"), url("fonts/Lato-Regular.svg") format("svg");
   font-weight: 400;
@@ -926,7 +926,7 @@ textarea.input {
       transform: rotate(45deg);
       bottom: 8px; }
 
-.mob-menu {
+/*.mob-menu {
   position: fixed;
   z-index: 50000;
   background: rgba(0, 0, 0, 0.8);
@@ -940,6 +940,24 @@ textarea.input {
   -webkit-transition: right 0.5s;
   -o-transition: right 0.5s;
   transition: right 0.5s; }
+
+.mob-menu.active {
+  right: 0%; } */
+
+  .mob-menu {
+  position: fixed;
+  z-index: 50000;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  width: 50%;
+  height: 100%;
+  padding: 35px 10px 0px 20px;
+  margin-top: 62px;
+  overflow: auto;
+  right: -100%;
+  -webkit-transition: right 0.8s;
+  -o-transition: right 0.8s;
+  transition: right 0.8s; }
 
 .mob-menu.active {
   right: 0%; }
@@ -1325,7 +1343,7 @@ h3 {
   .materials__img-01 img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover; 
   }
 
 
@@ -2044,9 +2062,15 @@ margin-left: 5px;
     background-position: 0 50%;
     margin-right: 0px; }
   .mob-menu {
+    width: 100%;
+    right: -100%;
+    -webkit-transition: right 0.8s;
+    -o-transition: right 0.8s;
+    transition: right 0.8s; }
+/*  .mob-menu {
     max-width: 100%; }
   .mob-menu.active {
-    width: 100%; }
+    width: 100%; }*/
   .footer__row {
     -webkit-box-align: start;
     -ms-flex-align: start;
