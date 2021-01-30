@@ -56,8 +56,8 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
           ->set_width(50),
         Field::make( 'text', 'as_vk', __( 'Вконтакте' ) )
           ->set_width(50),
-        // Field::make( 'text', 'as_director', __( 'Генеральный директор' ) ),
-        //   ->set_width(50),
+        Field::make( 'text', 'as_telegr', __( 'telegram' ) )
+          ->set_width(50),
         Field::make('text', 'map_point', 'Координаты карты')
           ->set_width(50),
         Field::make('text', 'text_map', 'Текст метки карты')
