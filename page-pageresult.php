@@ -18,8 +18,8 @@ get_header();
             <?php endif; ?>
         </div>
     </div>
-
-	
 </section>
 
-<?php get_footer(); ?>  
+<?php get_template_part('template-parts/services-block');?>
+
+<?php get_footer(); ?>   
