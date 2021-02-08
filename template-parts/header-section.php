@@ -19,7 +19,7 @@
 					<span></span>
 					<span></span>
 				</div>
-				<nav class="menu__body"> 
+				<nav class="menu__body">  
 					<?php wp_nav_menu( array('theme_location' => 'menu-1','menu_class' => 'menu__list',
 					'container_class' => 'menu__list','container' => false )); ?>
 				</nav>
@@ -39,7 +39,7 @@
 		</div>
 
 		<h1>ЛИПСКИЙ<br> И ПАРТНЕРЫ <br>
-			<span>консультации <br>
+			<span class="header__h1-sp">консультации <br>
 			для бизнеса</span>
 		</h1>
 

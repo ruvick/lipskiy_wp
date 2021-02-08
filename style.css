@@ -967,12 +967,11 @@ textarea.input {
   line-height: 52px;
   font-weight: 900;
   color: #8AB82D;
-  margin-bottom: 68px; }
-.header__container span {
-  font-size: 38px;
-  line-height: 40px;
-  display: block;
-   }
+  margin-bottom: 55px; }
+.header__h1-sp {
+  font-size: 32px;
+  line-height: 1;
+  display: block; }
 
 
 .header__form {
