@@ -968,6 +968,12 @@ textarea.input {
   font-weight: 900;
   color: #8AB82D;
   margin-bottom: 68px; }
+.header__container span {
+  font-size: 38px;
+  line-height: 40px;
+  display: block;
+   }
+
 
 .header__form {
   max-width: 302px;
