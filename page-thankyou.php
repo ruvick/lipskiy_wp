@@ -70,7 +70,7 @@ get_header();
 </section>
 
 <!-- Секция -->
-<section id="materials" class="materials__thankyou materials">
+<section id="materials" class="materials__home materials">
 	<div class="container">
 		<h2>
 			Интересные материалы
@@ -102,14 +102,19 @@ foreach( $posts as $post ){
 						</div>
 						<div class="materials__text">
 							<h3><?php echo $post->post_title?></h3>
-							<p><?php the_excerpt(); ?></p>
-							<a href="<?php echo get_permalink();?>" class="materials__btn btn">Подробнее</a>
+							<p>
+								<?php 
+									$maxchar = 200;
+									$text = strip_tags( get_the_excerpt() );
+									echo mb_substr( $text, 0, $maxchar );
+								?>
+							</p>
+							<a href="<?php echo get_permalink();?>" class="materials__btn btn">Подробнее</a> 
 						</div>
 					</div>
-				<!-- </a> -->
+				<!-- </a>	 -->
 <?php } ?>
 
-			
 		</div>
 	</div>
 </section>

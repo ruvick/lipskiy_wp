@@ -13,26 +13,31 @@
  */
 
 get_header();
+
 ?>
 
-	<main id="primary" class="site-main">
+<?php get_template_part('template-parts/header-cat');?>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+<main id="primary" class="site-main">
 
-			get_template_part( 'template-parts/content', 'page' );
+	<section class="posts">
+		<div class="container">
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			<div class ="posts__content ">
 
-		endwhile; // End of the loop.
-		?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<picture>
+						<?php echo get_the_post_thumbnail( $post->ID, "turImg", array("alt" => $post->post_title, "title" => $post->post_title));?>
+					</picture>
+					<?php the_content();?>
+				<?php endwhile;?>
+			<?php endif; ?>
 
-	</main><!-- #main -->
+		</div>
 
-<?php
-get_sidebar();
-get_footer();
+	</div>
+</section>
+
+</main>
+
+<?php get_footer(); ?>   
