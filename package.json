@@ -8,7 +8,7 @@
     "clear_r": "ssh alexatk4@alexatk4.beget.tech \"rm lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/*.*\"",
     "send_r": "scp -C *.php *.png *.css alexatk4@alexatk4.beget.tech:lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/",
     "send_ms": "scp -C *.css alexatk4@alexatk4.beget.tech:lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/",
-    "send_one": "scp -C page-pageresult.php alexatk4@alexatk4.beget.tech:lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/",
+    "send_one": "scp -C footer.php alexatk4@alexatk4.beget.tech:lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/",
     "send_head": "scp -C header.php alexatk4@alexatk4.beget.tech:lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/",
     "send_cat": "scp -C category.php alexatk4@alexatk4.beget.tech:lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/",
     "send_singl": "scp -C single.php alexatk4@alexatk4.beget.tech:lipskiy-konsalting.ru//public_html/wp-content/themes/lipsky/",
